@@ -1,0 +1,13 @@
+body {
+  font: 15px Roboto, sans-serif;
+  color: #212116;
+  background-color: #bee62e;
+}
+
+#content-box {
+  background-color: aliceblue;
+  width: 85%;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: #212116;
+}
