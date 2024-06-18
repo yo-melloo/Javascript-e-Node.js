@@ -5,9 +5,10 @@ body {
 }
 
 #content-box {
+  margin-top: 25px;
   background-color: aliceblue;
-  width: 85%;
+  width: 55%;
   padding: 15px;
   border-radius: 15px;
-  box-shadow: #212116;
+  box-shadow: 10px 15px #2121161f;
 }
