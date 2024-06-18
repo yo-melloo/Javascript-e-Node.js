@@ -1,0 +1,18 @@
+{
+    "nome": "Gustavo",
+    "sobrenome": "Melo",
+    "apelidos": ["Mello", "Jazz", "Guga"],
+    "hobbies": ["Jogar", "Estudar", "Produzir", "Viajar"],
+    "emprego": {
+        "Empresa": "Satelite Norte",
+        "Cargo":"Auxiliar de Tráfego",
+        "Remuneração": 1800,
+        "Carga Horária": 12
+    },
+    "relacionametos": {
+        "Mãe":"JG",
+        "Pai":"JC",
+        "Irmãos":["Js", "Css", "Vh"],
+        "Esposa":"Lydia"
+    }
+}
