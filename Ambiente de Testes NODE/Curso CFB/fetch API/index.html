@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fetch API</title>
+    <link rel="stylesheet" href="estilo.css" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <!--Importando Fontes -->
+    <!--Lora -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Fontes -->
+  </head>
+  <body>
+    <div align="center" class="alinhar-conteudo" id="conteudo-principal">
+      <!-- eu não sei se isso ta certo -->
+      <header id="cabecalho-fetch-API">
+        <h1 class="titulo" id="titulo-fetch-API">Fetch API</h1>
+        <h4 id="subtexto-comeco" class="informativo">
+          A API Fetch fornece uma interface para buscar recursos (inclusive na
+          rede). É um substituto mais poderoso e flexível para
+          <code>XMLHttpRequest</code>.
+        </h4>
+      </header>
+
+      <section class="conteudo" id="fetch-API-CONCEITOS">
+        <h3 class="subtitulo" id="subtitulo-fetch-API-CONCEITOS">
+          Conceitos e uso
+        </h3>
+        <p class="informativo" id="descricao-fetch-API">
+          A API Fetch usa objetos <strong>Request e Response</strong> (e outras
+          coisas envolvidas com solicitações de rede), bem como conceitos
+          relacionados, como <code>CORS</code> e a semântica do cabeçalho
+          <code>HTTP Origin</code>.
+          <br clear="both" />
+          Para fazer uma solicitação e buscar um recurso, use o método
+          <strong><code>fetch()</code></strong
+          >. É um <strong>método global</strong> nos contextos Window e Worker.
+          Isso o torna
+          <strong
+            >disponível em praticamente qualquer contexto no qual você queira
+            buscar recursos.</strong
+          >
+          O método <code>fetch()</code> usa um argumento obrigatório, o caminho
+          para o recurso que você deseja buscar. Ele retorna uma
+          <code>Promisse</code> que resolve a resposta a essa solicitação —
+          assim que o servidor responde com cabeçalhos — mesmo que a resposta do
+          servidor seja um status de erro HTTP. Você também pode opcionalmente
+          passar um objeto de <strong>Opções</strong>
+          de inicialização como o segundo argumento (consulte Solicitação).
+          <br clear="both" />
+          Depois que uma resposta é recuperada, há vários métodos disponíveis
+          para definir qual é o conteúdo do corpo e como ele deve ser tratado.
+          Você pode criar uma solicitação e uma resposta diretamente usando os
+          construtores <code>Request()</code> e <code>Response()</code>, mas é
+          incomum fazer isso diretamente. Em vez disso, é mais provável que
+          sejam criados como resultados de outras ações de API (por exemplo,
+          <code>FetchEvent.respondWith()</code> de service workers).
+          <br clear="both" />
+          <strong
+            >Saiba mais sobre como usar os recursos da API Fetch em Usando o
+            Fetch e estude conceitos em Conceitos básicos do Fetch no site da
+            <a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API"
+              >MDN</a
+            >.</strong
+          >
+        </p>
+        <input type="button" value="Fetch" class="botao-comum" />
+        <p id="res" style="background-color: gray"></p>
+        <!-- DESAFIO: VOLTAR AQUI E INSERIR O VALOR DO RESULTADO DA REQUISIÇÃO AQUI -->
+      </section>
+    </div>
+    <script src="script.js"></script>
+    <script src="api.js"></script>
+  </body>
+</html>

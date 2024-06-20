@@ -1,0 +1,50 @@
+body {
+  font: 15px Lora;
+  background-color: #33302c;
+  color: #3c3429;
+}
+
+code {
+  border-radius: 5px;
+  padding: 1px;
+  background-color: #916b359a;
+  color: white;
+}
+
+section {
+  background-color: #bb7c25;
+  padding: 15px;
+  border-radius: 25px;
+}
+
+.titulo {
+  font-size: 35px;
+  color: #e58908;
+  font-family: Arial, Helvetica, sans-serif;
+  width: auto;
+  padding: 3px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: gray;
+  border-radius: 35px;
+}
+.subtitulo {
+  font-size: 20px;
+  color: #e58908;
+  font-family: Arial, Helvetica, sans-serif;
+  width: auto;
+  padding: 3px;
+  background-color: gray;
+  border-radius: 35px;
+}
+
+#subtexto-comeco {
+  background-color: gray;
+  padding: 5px;
+  width: auto;
+  border-radius: 15px;
+}
+
+.alinhar-conteudo {
+  padding: 3%;
+}
