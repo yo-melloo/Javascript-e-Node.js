@@ -1,4 +1,6 @@
-const express = require("express");
+/* Código comentado por mim para fins de documentação */
+
+const express = require("express"); /* Importando o Node.Express */
 const app = express();
 const port = 8080;
 const UserModel = require("../src/models/user.model");
@@ -18,6 +20,17 @@ app.get("/users", async (req, res) => {
   }
 });
 
+app.get("/users/:id", async (req, res) => {
+  try {
+    const id = req.params.id;
+    const user = await UserModel.findById(id);
+
+    return res.status(200).json(user);
+  } catch (e) {
+    return res.status(500).send(e.message);
+  }
+});
+
 app.post("/users", async (req, res) => {
   try {
     const user = await UserModel.create(req.body);
@@ -28,5 +41,5 @@ app.post("/users", async (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Servidor rodando em http://localhost:${port}`);
+  console.log(`Servidor rodando em http://localhost:${port}/home`);
 });
