@@ -63,6 +63,17 @@ app.patch("/users/:id", async (req, res) => {
   }
 });
 
+app.delete("/users/:id", async (requisicao, resposta) => {
+  try {
+    const id = requisicao.params.id;
+    const usuario = await UserModel.findByIdAndDelete(id);
+
+    resposta.status(200).json(usuario);
+  } catch (erro) {
+    resposta.status(500).send(erro.message);
+  }
+});
+
 /* "Lançando" o servidor */
 app.listen(port, () => {
   console.log(`Servidor rodando em http://localhost:${port}/home`);
