@@ -13,6 +13,17 @@ const UserModel = require("../src/models/user.model");
 /* Declarando trabalhar com JSON (boa parte) no código*/
 app.use(express.json());
 
+/* Declarando uma função MIDDELWARE - Essa função vai ser executada antes de qualquer request */
+app.use((req, res, next) => {
+  console.log("----------");
+  console.log(`Request Method: "${req.method}"`);
+  console.log(`Content Type: "${req.headers["content-type"]}"`);
+  console.log(new Date());
+  console.log("----------");
+
+  next();
+});
+
 /* Criando a página inicial do servidor */
 app.get("/home", (req, res) => {
   res.status(200).send('<h1 style="color: green">Olá Mundo</h1>');
