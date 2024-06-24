@@ -50,7 +50,9 @@ app.post("/users", async (req, res) => {
   }
 });
 
+/* Criando possibilidade de editar usuário */
 app.patch("/users/:id", async (req, res) => {
+  // "link/endpoint é o mesmo que exibe o usuário único"
   try {
     const id = req.params.id;
     const user = await UserModel.findByIdAndUpdate(id, req.body, { new: true });
