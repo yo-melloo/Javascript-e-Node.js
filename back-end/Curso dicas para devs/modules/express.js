@@ -50,6 +50,17 @@ app.post("/users", async (req, res) => {
   }
 });
 
+app.patch("/users/:id", async (req, res) => {
+  try {
+    const id = req.params.id;
+    const user = await UserModel.findByIdAndUpdate(id, req.body, { new: true });
+
+    res.status(200).json(user);
+  } catch (e) {
+    res.status(500).send(e.message);
+  }
+});
+
 /* "Lançando" o servidor */
 app.listen(port, () => {
   console.log(`Servidor rodando em http://localhost:${port}/home`);
