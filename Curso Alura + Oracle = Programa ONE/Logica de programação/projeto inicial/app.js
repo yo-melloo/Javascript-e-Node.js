@@ -1,12 +1,13 @@
 alert("Boas vindas ao jogo do número secreto");
-let numeroSecreto = parseInt(Math.random() * 10 + 1);
+let numeroMaximo = 5000;
+let numeroSecreto = parseInt(Math.random() * numeroMaximo + 1);
 console.log(numeroSecreto);
 let chute;
 let tentativas = 1;
 
 // enquanto chute não for igual ao n.s.
 while (chute != numeroSecreto) {
-  chute = prompt("Escolha um número entre 1 e 10");
+  chute = prompt(`Escolha um número entre 1 e ${numeroMaximo}`);
   // se chute for igual ao número secreto
   if (chute == numeroSecreto) {
     break;
@@ -16,19 +17,18 @@ while (chute != numeroSecreto) {
     } else {
       alert(`O número secreto é maior que ${chute}`);
     }
-    // tentativas = tentativas + 1
+    // tentativas = tentativas + 1;
     tentativas++;
   }
 }
 
 let palavraTentativa = tentativas > 1 ? "tentativas" : "tentativa";
 alert(
-  `Isso ai! Você descobriu o número secreto ${numeroSecreto} com ${tentativas} ${palavraTentativa}`
+  `Isso ai! Você descobriu o número secreto ${numeroSecreto} com ${tentativas} ${palavraTentativa}.`
 );
 
-/* 
-É importante lembrar que, quando o projeto ficar disponível para todas as pessoas,
-o que chamamos no contexto de software de ambiente de produção,
-os comandos console.log devem ser removidos ou desabilitados,
-pois podem causar problemas de desempenho e segurança.
-*/
+// if (tentativas > 1) {
+//     alert(`Isso ai! Você descobriu o número secreto ${numeroSecreto} com ${tentativas} tentativas.`);
+// } else {
+//     alert(`Isso ai! Você descobriu o número secreto ${numeroSecreto} com ${tentativas} tentativa.`);
+// }
