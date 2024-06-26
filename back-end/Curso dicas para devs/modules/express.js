@@ -13,6 +13,9 @@ const UserModel = require("../src/models/user.model");
 /* Declarando trabalhar com JSON (boa parte) no código*/
 app.use(express.json());
 
+app.set("view engine", "ejs");
+app.set("views", "src/views");
+
 /* Declarando uma função MIDDELWARE - Essa função vai ser executada antes de qualquer request */
 app.use((req, res, next) => {
   console.log("----------");
@@ -22,6 +25,11 @@ app.use((req, res, next) => {
   console.log("----------");
 
   next();
+});
+
+app.get("/view/users", async (req, res) => {
+  const users = await UserModel.find({});
+  res.render("index", { users });
 });
 
 /* Criando a página inicial do servidor */

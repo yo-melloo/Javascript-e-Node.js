@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <%- include('./partials/head.ejs') %>
+  <body>
+    <%- include('./partials/navbar.ejs') %>
+    <div class="content">
+      <% if (users.length > 0) { %> <% users.forEach(user => { %>
+      <h3><%= user.firstName %> <%= user.lastName %></h3>
+      <p><%= user.email %></p>
+      <% }) %> <% } %>
+    </div>
+  </body>
+</html>
