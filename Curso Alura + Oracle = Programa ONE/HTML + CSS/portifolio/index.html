@@ -3,16 +3,63 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Portifolio</title>
   </head>
   <body>
-    <h1>Isso é um título</h1>
-    <h2>Isso é um subtítulo legal</h2>
-    <p>Isso é um paragrafo interessante</p>
-    <img src="html.png" alt="logo do HTML 5" />
-    <ul>
-      <li>item 1</li>
-      <li>item 2</li>
-    </ul>
+    <header style="display: none">
+      <div class="container-titulo">
+        <!-- Mudar pra H1 depois-->
+        <h2 class="nome-site">Portifólio</h2>
+      </div>
+    </header>
+    <main>
+      <div class="container-principal">
+        <div class="conteudo-principal">
+          <div class="conteudo-esquerda">
+            <div class="display-texto">
+              <div class="texto-titulo">
+                <h1>
+                  Eleve seu negócio digital
+                  <strong class="destaque-1"
+                    >com um front-end de qualidade!</strong
+                  >
+                </h1>
+              </div>
+              <div class="texto-bio">
+                <p>
+                  Olá! Sou Joana Santos, desenvolvedora Front-end com
+                  especialidade em React, HTML e CSS. Ajudo pequenos negócios e
+                  designers a colocarem em prática boas ideias. Vamos conversar?
+                </p>
+              </div>
+            </div>
+
+            <div class="links-sociais" align="center">
+              <div class="container-botoes">
+                <a href="https://linkedin.com/" class="ancora-botao"
+                  >LinkedIn</a
+                >
+                <a href="https://github.com" class="ancora-botao">Github</a>
+              </div>
+            </div>
+          </div>
+          <div class="conteudo-direita">
+            <div class="container-imagem">
+              <img src="imagem.png" alt="Joana" height="250px" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer style="display: none">
+      <div class="rodape-autor">
+        <p>
+          Gustavo Mello
+          <br clear="both" />
+          2024
+        </p>
+      </div>
+    </footer>
   </body>
 </html>

@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+  text-decoration-line: none;
+  font-family: Montserrat;
+}
+
+body {
+  background-color: black;
+}
+
+h1 {
+  font-family: Krona One;
+}
+
+header {
+  text-align: center;
+  height: 5vh;
+  margin-bottom: 5%;
+}
+
+main {
+  height: 78vh;
+}
+
+.container-titulo {
+  display: flex;
+  justify-content: center;
+}
+
+.nome-site {
+  padding: 3px 5px;
+  width: max-content;
+}
+
+.container-principal {
+  padding: 0 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.conteudo-principal {
+  position: relative;
+  display: flex;
+}
+
+.texto-bio {
+  margin: 1%;
+  margin-top: 10%;
+}
+
+.conteudo-esquerda {
+  justify-content: center;
+  width: 50%;
+}
+
+.display-texto {
+  padding: 15%;
+}
+
+.destaque-1 {
+  color: aqua;
+  font-family: Krona One;
+}
+
+.container-botoes {
+  display: flex;
+  gap: 10%;
+  width: max-content;
+}
+
+.ancora-botao {
+  padding: 15px 40px;
+  border-style: hidden;
+  border-radius: 5px;
+  background-color: aqua;
+  color: black;
+  font-weight: bold;
+}
+
+.conteudo-direita {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+
+.container-imagem {
+  align-content: center;
+}
+
+img {
+  border-radius: 10px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 5vh;
+}
