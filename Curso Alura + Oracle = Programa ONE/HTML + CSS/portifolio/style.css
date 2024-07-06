@@ -11,6 +11,7 @@
 body {
   background-color: black;
   height: 100vh;
+  box-sizing: border-box;
 }
 
 h1 {
@@ -45,9 +46,11 @@ main {
 }
 
 .conteudo-principal {
+  margin: 10%;
   position: relative;
   display: flex;
   box-sizing: border-box;
+  justify-content: space-between;
 }
 
 .texto-bio {
@@ -56,13 +59,11 @@ main {
 }
 
 .conteudo-esquerda {
+  display: flex;
   justify-content: center;
   width: 50%;
   box-sizing: border-box;
-}
-
-.display-texto {
-  padding: 15%;
+  flex-direction: column;
 }
 
 .destaque-1 {
@@ -86,20 +87,13 @@ main {
   font-weight: bold;
 }
 
-.conteudo-direita {
+/* .conteudo-direita {
   display: flex;
   justify-content: center;
   width: 50%;
   box-sizing: border-box;
-}
-
-.container-imagem {
-  align-content: center;
-}
-
-img {
-  border-radius: 10px;
-}
+  flex-wrap: wrap;
+} */
 
 footer {
   display: flex;
