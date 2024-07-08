@@ -48,7 +48,7 @@ p {
 } */
 
 .container-principal {
-  margin: 10%;
+  margin: 10% 15%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -56,6 +56,9 @@ p {
 
 .conteudo-principal {
   width: 615px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
 /* .texto-bio {
@@ -83,7 +86,7 @@ p {
 .btn-social {
   background-color: #22d4fd;
   color: black;
-  width: 280px;
+  width: 275px;
   border-radius: 16px;
   font-size: 24px;
   padding: 21.5px 0px;
