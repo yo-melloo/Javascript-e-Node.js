@@ -24,7 +24,7 @@ p {
 }
 
 .destaque-1 {
-  color: #5ed3f3;
+  color: #22d4fd;
 }
 
 /*header {
@@ -75,12 +75,22 @@ p {
   color: #5ed3f3;
 } */
 
-/* .container-botoes {
+.container-botoes {
   display: flex;
-  gap: 10%;
-  width: max-content;
-  box-sizing: border-box;
-} */
+  justify-content: space-between;
+}
+
+.btn-social {
+  background-color: #22d4fd;
+  color: black;
+  width: 280px;
+  border-radius: 16px;
+  font-size: 24px;
+  padding: 21.5px 0px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
 
 /* 
 .ancora-botao {
