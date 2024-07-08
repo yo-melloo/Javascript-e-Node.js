@@ -3,89 +3,95 @@
 * {
   margin: 0;
   padding: 0;
-  color: white;
   text-decoration-line: none;
-  font-family: Montserrat;
 }
 
 body {
+  color: white;
   background-color: black;
-  height: 100vh;
+  height: 90vh;
   box-sizing: border-box;
 }
 
 h1 {
-  font-family: Krona One;
+  font-family: "Krona One", sans-serif;
+  font-size: 36px;
 }
 
-header {
-  text-align: center;
-  height: 5vh;
-  margin-bottom: 5%;
-}
-
-main {
-  height: 78vh;
-}
-
-.container-titulo {
-  display: flex;
-  justify-content: center;
-}
-
-.nome-site {
-  padding: 3px 5px;
-  width: max-content;
-}
-
-.container-principal {
-  padding: 0 2%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.conteudo-principal {
-  margin: 10%;
-  position: relative;
-  display: flex;
-  box-sizing: border-box;
-  justify-content: space-between;
-}
-
-.texto-bio {
-  margin: 1%;
-  margin-top: 10%;
-}
-
-.conteudo-esquerda {
-  display: flex;
-  justify-content: center;
-  width: 50%;
-  box-sizing: border-box;
-  flex-direction: column;
+p {
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
 }
 
 .destaque-1 {
   color: #5ed3f3;
-  font-family: Krona One;
 }
 
-.container-botoes {
+/*header {
+  text-align: center;
+  height: 5vh;
+  margin-bottom: 5%;
+} */
+
+/* main {
+  height: 78vh;
+} */
+
+/* .container-titulo {
+  display: flex;
+  justify-content: center;
+} */
+
+/* .nome-site {
+  padding: 3px 5px;
+  width: max-content;
+} */
+
+.container-principal {
+  margin: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.conteudo-principal {
+  width: 615px;
+}
+
+/* .texto-bio {
+  margin: 1%;
+  margin-top: 10%;
+} */
+
+/* .conteudo-esquerda {
+  display: flex;
+  justify-content: center;
+  width: 615px;
+  box-sizing: border-box;
+  flex-direction: column;
+} */
+
+/* .destaque-1 {
+  color: #5ed3f3;
+} */
+
+/* .container-botoes {
   display: flex;
   gap: 10%;
   width: max-content;
   box-sizing: border-box;
-}
+} */
 
+/* 
 .ancora-botao {
-  padding: 15px 40px;
-  border-style: hidden;
+  text-decoration: none;
+  padding: 2% 0%;
+  border-style: none;
   border-radius: 5px;
   background-color: #5ed3f3;
   color: black;
   font-weight: bold;
-}
+} */
 
 /* .conteudo-direita {
   display: flex;
@@ -95,9 +101,9 @@ main {
   flex-wrap: wrap;
 } */
 
-footer {
+/* footer {
   display: flex;
   justify-content: center;
   text-align: center;
   height: 5vh;
-}
+} */
