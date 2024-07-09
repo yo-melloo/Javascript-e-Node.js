@@ -9,13 +9,18 @@
 body {
   color: white;
   background-color: black;
-  height: 90vh;
+  height: 95vh;
   box-sizing: border-box;
 }
 
 h1 {
   font-family: "Krona One", sans-serif;
   font-size: 36px;
+}
+
+h2 {
+  font-family: "Krona One", sans-serif;
+  font-weight: 400;
 }
 
 p {
@@ -48,7 +53,7 @@ p {
 } */
 
 .container-principal {
-  margin: 10% 15%;
+  margin: 5%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -80,14 +85,18 @@ p {
 
 .container-botoes {
   display: flex;
+  align-items: center;
   justify-content: space-between;
+  flex-direction: column;
+  gap: 32px;
 }
 
 .btn-social {
-  background-color: #22d4fd;
-  color: black;
-  width: 275px;
-  border-radius: 16px;
+  /* background-color: #22d4fd; */
+  color: #f6f6f6;
+  border: 2px solid #22d4fd;
+  width: 378px;
+  border-radius: 8px;
   font-size: 24px;
   padding: 21.5px 0px;
   text-align: center;
