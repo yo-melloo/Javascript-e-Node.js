@@ -9,7 +9,7 @@
 body {
   color: white;
   background-color: black;
-  height: 95vh;
+  height: 90vh;
   box-sizing: border-box;
 }
 
@@ -93,6 +93,7 @@ p {
 
 .btn-social {
   /* background-color: #22d4fd; */
+  display: flex;
   color: #f6f6f6;
   border: 2px solid #22d4fd;
   width: 378px;
@@ -102,6 +103,12 @@ p {
   text-align: center;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
+  justify-content: center;
+  gap: 16px;
+}
+
+.btn-social:hover {
+  background-color: #272727;
 }
 
 /* 
