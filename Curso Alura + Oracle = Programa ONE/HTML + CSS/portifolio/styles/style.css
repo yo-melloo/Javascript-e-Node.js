@@ -9,13 +9,65 @@
 body {
   color: white;
   background-color: black;
-  height: 90vh;
+  /* height: 100vh; */
   box-sizing: border-box;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.curriculo {
+  background-color: rgba(255, 255, 255, 0.21);
+  padding: 25px;
+  border-radius: 20px;
+}
+
+.cabecalho {
+  /* justify-content: center;
+  align-items: center; */
+  padding: 1% 0% 0% 5%;
+}
+
+.cabecalho-menu {
+  display: flex;
+  /* gap: 80px; */
+}
+
+.cabecalho-menu-link {
+  font-size: 18px;
+  color: #717171;
+  margin: 0 10px;
+  padding: 5px 10px;
+  text-decoration: none;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+}
+
+.cabecalho-menu-link:hover {
+  color: #22d4fd;
 }
 
 h1 {
   font-family: "Krona One", sans-serif;
-  font-size: 36px;
+  font-size: 35px;
+}
+
+.destaque:hover {
+  color: #22d4fd;
+}
+
+li {
+  /* border: red 2px solid; */
+  margin: 2px;
+}
+
+li:hover {
+  color: #22d4fd;
+}
+
+#informacoes-resumidas {
+  font-size: 16px;
+  text-align: center;
 }
 
 h2 {
@@ -23,10 +75,10 @@ h2 {
   font-weight: 400;
 }
 
-p {
+/* p {
   font-size: 24px;
   font-family: "Montserrat", sans-serif;
-}
+} */
 
 .destaque-1 {
   color: #22d4fd;
@@ -53,7 +105,7 @@ p {
 } */
 
 .container-principal {
-  margin: 5%;
+  padding: 2% 3%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -109,6 +161,32 @@ p {
 
 .btn-social:hover {
   background-color: #272727;
+}
+
+.container-skills {
+  display: flex;
+  justify-content: space-around;
+}
+
+.container-imagem {
+  box-sizing: border-box;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
+  align-items: center;
+  text-align: center;
+}
+
+.rodape {
+  padding: 24px;
+  text-align: center;
+  color: #000000;
+  background-color: #22d4fd;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
 }
 
 /* 
