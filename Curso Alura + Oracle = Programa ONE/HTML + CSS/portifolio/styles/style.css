@@ -1,5 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
+:root {
+  --cor-principal: black;
+  --cor-secundaria: white;
+  --cor-terciaria: #22d4fd;
+  --cor-plano: rgba(255, 255, 255, 0.21);
+  --cor-foco: #272727;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -108,7 +116,7 @@ h2 {
   padding: 2% 3%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .conteudo-principal {
@@ -180,13 +188,13 @@ h2 {
 }
 
 .rodape {
-  padding: 24px;
+  padding: 12px;
   text-align: center;
   color: #000000;
   background-color: #22d4fd;
   font-weight: 400;
   font-family: "Montserrat", sans-serif;
-  font-size: 24px;
+  font-size: 19px;
 }
 
 /* 
