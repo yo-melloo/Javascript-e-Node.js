@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
-  --cor-principal: black;
-  --cor-secundaria: white;
-  --cor-terciaria: #22d4fd;
-  --cor-plano: rgba(255, 255, 255, 0.21);
-  --cor-foco: #272727;
+  --cor-principal: #0c0c0c;
+  --cor-secundaria: #eeeeee;
+  --cor-terciaria: #f2613f;
+  --cor-plano: rgba(255, 255, 255, 0.324);
+  --cor-foco: #9b382235;
 }
 
 * {
@@ -15,8 +15,8 @@
 }
 
 body {
-  color: white;
-  background-color: black;
+  color: var(--cor-secundaria);
+  background-color: var(--cor-principal);
   /* height: 100vh; */
   box-sizing: border-box;
   font-size: 18px;
@@ -24,7 +24,7 @@ body {
 }
 
 .curriculo {
-  background-color: rgba(255, 255, 255, 0.21);
+  background-color: var(--cor-plano);
   padding: 25px;
   border-radius: 20px;
 }
@@ -42,7 +42,7 @@ body {
 
 .cabecalho-menu-link {
   font-size: 18px;
-  color: #717171;
+  color: var(--cor-plano);
   margin: 0 10px;
   padding: 5px 10px;
   text-decoration: none;
@@ -52,7 +52,7 @@ body {
 }
 
 .cabecalho-menu-link:hover {
-  color: #22d4fd;
+  color: var(--cor-terciaria);
 }
 
 h1 {
@@ -61,7 +61,7 @@ h1 {
 }
 
 .destaque:hover {
-  color: #22d4fd;
+  color: var(--cor-terciaria);
 }
 
 li {
@@ -70,7 +70,7 @@ li {
 }
 
 li:hover {
-  color: #22d4fd;
+  color: var(--cor-terciaria);
 }
 
 #informacoes-resumidas {
@@ -89,7 +89,7 @@ h2 {
 } */
 
 .destaque-1 {
-  color: #22d4fd;
+  color: var(--cor-terciaria);
 }
 
 /*header {
@@ -152,10 +152,10 @@ h2 {
 }
 
 .btn-social {
-  /* background-color: #22d4fd; */
+  /* background-color: var(--cor-terciaria); */
   display: flex;
   color: #f6f6f6;
-  border: 2px solid #22d4fd;
+  border: 2px solid var(--cor-terciaria);
   width: 378px;
   border-radius: 8px;
   font-size: 24px;
@@ -168,7 +168,7 @@ h2 {
 }
 
 .btn-social:hover {
-  background-color: #272727;
+  background-color: var(--cor-foco);
 }
 
 .container-skills {
@@ -191,7 +191,7 @@ h2 {
   padding: 12px;
   text-align: center;
   color: #000000;
-  background-color: #22d4fd;
+  background-color: var(--cor-terciaria);
   font-weight: 400;
   font-family: "Montserrat", sans-serif;
   font-size: 19px;
