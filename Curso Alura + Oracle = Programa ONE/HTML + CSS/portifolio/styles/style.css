@@ -182,23 +182,21 @@ h2 {
   justify-content: space-around;
 }
 
-.container-imagem {
-  box-sizing: border-box;
+.imagem-conteudo {
+  /* box-sizing: border-box;
   padding: 30px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 30px;
   align-items: center;
-  text-align: center;
-}
-
-.imagem-conteudo {
-  height: 40%;
-  width: 40%;
+  text-align: center; */
+  height: 60%;
+  width: 60%;
 }
 
 .rodape {
+  /* margin-top: 15%; */
   padding: 12px;
   text-align: center;
   color: #000000;
