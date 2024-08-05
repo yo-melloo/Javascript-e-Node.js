@@ -126,9 +126,11 @@ h2 {
   gap: 40px;
 }
 
-/* .conteudo-principal {
-  width: 50%;
-} */
+.conteudo-principal {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 
 /* .texto-bio {
   margin: 1%;
@@ -233,6 +235,16 @@ h2 {
 } */
 
 @media (max-width: 705px) {
+  body {
+    text-align: center;
+  }
+  .cabecalho {
+    padding: 10%;
+  }
+  .cabecalho-menu {
+    justify-content: center;
+  }
+
   .container-principal {
     flex-direction: column-reverse;
   }
