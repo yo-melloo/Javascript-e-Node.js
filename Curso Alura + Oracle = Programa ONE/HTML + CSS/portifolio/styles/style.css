@@ -192,7 +192,7 @@ h2 {
   align-items: center;
   text-align: center; */
   height: 60%;
-  width: 60%;
+  width: 80%;
 }
 
 .rodape {
@@ -232,12 +232,12 @@ h2 {
   height: 5vh;
 } */
 
-@media (max-width: 705px) {
+@media (max-width: 768px) {
   body {
     text-align: center;
   }
   .cabecalho {
-    padding: 10%;
+    padding: 5%;
   }
   .cabecalho-menu {
     justify-content: center;
@@ -245,5 +245,6 @@ h2 {
 
   .container-principal {
     flex-direction: column-reverse;
+    padding: 5%;
   }
 }
