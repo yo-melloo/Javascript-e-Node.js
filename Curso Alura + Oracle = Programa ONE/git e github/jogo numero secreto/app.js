@@ -29,7 +29,7 @@ function verificarChute() {
       `<span style="${highlight}">Parabens, você acertou!</span>`
     );
     let palavraTentativa = tentativas > 1 ? "tentativas" : "tentativa";
-    let mensagemTentativas = `Você descobriu o número secreto com <span style="${highlight}">${tentativas} ${palavraTentativa}!</span>`;
+    let mensagemTentativas = `Você descobriu o código secreto com <span style="${highlight}">${tentativas} ${palavraTentativa}!</span>`;
     exibirTextoNaTela("p", mensagemTentativas);
     document.getElementById("reiniciar").removeAttribute("disabled");
   } else {
